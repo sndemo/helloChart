@@ -6,7 +6,7 @@ replicaCount: 1
 
 image:
   repository: hclcloudworks/cloudworks
-  tag: hcl.hello.1
+  tag: demo.hello.8
   pullPolicy: IfNotPresent
 
 nameOverride: ""
@@ -14,9 +14,9 @@ fullnameOverride: ""
 
 service:
   enabled: true
-  name: sample
+  name: hello
   type: ClusterIP
-  port: 80
+  port: 8080
   annotations: {}
   identifier: cisco
   expose: true
